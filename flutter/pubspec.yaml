@@ -1,0 +1,42 @@
+name: nola
+description: "Nola — British female voice AI assistant"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+  flutter: ">=3.38.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # LiveKit voice agent SDK (Session API + agent UI components)
+  livekit_components: ^1.3.1
+  livekit_client: ^2.12.0
+
+  # Icons / fonts for the control bar
+  flutter_sficon: ^1.2.0
+  cupertino_icons: ^1.0.8
+
+  # Config, state, logging
+  flutter_dotenv: ^6.0.0
+  provider: ^6.1.2
+  logging: ^1.3.0
+  intl: ^0.20.0
+  uuid: ^4.5.1
+
+  # Chat UI
+  chat_bubbles: ^1.6.0
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  # The assets/ directory picks up the optional assets/.env file when present.
+  assets:
+    - assets/
